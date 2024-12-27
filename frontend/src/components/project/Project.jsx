@@ -1,11 +1,8 @@
 import React from 'react';
 import './Project.css';
 import ProjectImage from '../project/ProjectImage';
-// import Img2 from '../../assets/img2.jpg';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
 
-function Project() {
+const Project = () => {
 
     return (
         <section id="project">

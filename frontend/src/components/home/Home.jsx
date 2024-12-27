@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import './Home.css';
+import { useNavigate } from "react-router-dom";
 
-function Home() {
+const Home = () => {
     const [hireMe, setHireMe] = useState(false);
+    console.log(hireMe);
+    
+    const navigate = useNavigate();
 
     function handleHireMe() {
         setHireMe(!hireMe)
+        navigate("/hireme", { state: { email: "aasia3017@gmail.com" } });
     }
 
-    return(
+    return (
         <section id="home">
             <div className="home-container">
                 <h2 className="home-myname">Hi, I'm Aasia</h2>

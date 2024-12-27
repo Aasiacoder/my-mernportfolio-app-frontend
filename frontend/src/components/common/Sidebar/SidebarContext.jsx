@@ -1,9 +1,9 @@
 import React, { createContext, useState, useContext } from "react";
 
-// Create the Sidebar Context
+// Sidebar Context
 const SidebarContext = createContext();
 
-// Custom hook to use Sidebar Context
+// use Sidebar Context
 const useSidebar = () => useContext(SidebarContext);
 
 // Sidebar Provider Component

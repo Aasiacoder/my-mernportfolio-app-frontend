@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 
-function Footer() {
+const Footer = () => {
     const handleGitHubClick = () => {
         window.location.href = "https://github.com/Aasiacoder";
     }

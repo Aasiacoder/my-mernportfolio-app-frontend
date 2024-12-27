@@ -1,12 +1,7 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 /*Projects Section*/
+
 #project {
-    max-width: 100vw;
+    max-width: 100%;
     max-height: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -21,10 +16,10 @@
 }
 
 .project-container {
-    width: 100vw;
+    width: 100%;
     height: 100%;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -126,7 +121,9 @@ img {
     transform: translateY(0px);
 }
 
+
 /*ProjectImage page*/
+
 #projectimg {
     height: 100%;
     display: grid;
@@ -135,6 +132,8 @@ img {
     justify-content: space-evenly;
     gap: 1.5rem;
 }
+
+/*Responsive style*/
 
 @media screen and (max-width: 1024px) {
     .project-head {
@@ -176,7 +175,7 @@ img {
     }
 
     #projectimg {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 }
 

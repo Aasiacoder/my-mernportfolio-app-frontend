@@ -1,14 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /*Home Section*/
+
 #home {
-    width: 100vw;
+    width: 100%;
     background-color: #FFFFFF;
-    height: 85vh;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -32,7 +27,7 @@
 
 .home-profile {
     font-size: 1.5rem;
-    color: #6C6D6E; /*6C6D6E*/
+    color: #6C6D6E; 
 }
 
 .hire-me-button {
@@ -54,12 +49,13 @@
 
 .hire-me-button:hover {
     background-color: #AA376B;
-    border-right: 2px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
 }
 
 
 /* Responsive styles */
+
 @media screen and (min-width: 800px) {
 
 }

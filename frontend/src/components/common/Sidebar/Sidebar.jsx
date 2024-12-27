@@ -1,15 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faTimes } from '@fortawesome/free-solid-svg-icons'
-import useSidebar from './SidebarContext';
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+// import useSidebar from './SidebarContext';
 import './Sidebar.css';
+import { useState } from 'react';
 
-function Sidebar() {
-    const { isSidebarOpen, toggleSidebar } = useSidebar();
-
+const Sidebar = ({ onClose }) => {
+    const { isSidebarOpen } = useState();
+    
     return (
         <section id="sidebar">
-            <div className={`sidebar ${isSidebarOpen ? "sidebar-open" : "sidebar-closed"}`}>
-                <FontAwesomeIcon icon={faTimes} className="close-icon" id='side-close__icon' onClick={toggleSidebar} />
+            <div className={`sidebar ${isSidebarOpen ? "sidebar-open" : "sidebar-closed"}`}> 
+                <FontAwesomeIcon icon={faTimes} className="close-icon" id='side-close__icon' onClick={onClose} />
                 <ul className="sidebar-list">
                     <li><a href="#home" className='sidebar-items'>Home</a></li>
                     <li><a href="#about" className='sidebar-items'>About</a></li>

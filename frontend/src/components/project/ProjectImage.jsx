@@ -1,7 +1,7 @@
 import React from 'react';
 import './Project.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faWebAwesome } from "@fortawesome/free-brands-svg-icons";
 import ActodoApp from '../../assets/ActodoApp.png';
 import WeatherApp from '../../assets/WeatherApp.png';
 import UdemyApp from '../../assets/UdemyApp.png';
@@ -9,7 +9,7 @@ import NostraApp from '../../assets/NostraApp.png';
 
 
 
-function ProjectImage() {
+const ProjectImage = () => {
     //Nostra Clone
     const handleNostraGitHub = () => {
         window.location.href = "https://github.com/Aasiacoder/Nostra-Website-clone";
@@ -63,7 +63,7 @@ function ProjectImage() {
                             onClick={handleActodoGitHub}
                         />
                         <FontAwesomeIcon
-                            icon={faCodepen}
+                            icon={faWebAwesome}
                             className="project-icon size-8"
                             id="laptop"
                             onClick={handleActodoClick}
@@ -87,7 +87,7 @@ function ProjectImage() {
                             onClick={handleWeatherGitHub}
                         />
                         <FontAwesomeIcon
-                            icon={faCodepen}
+                            icon={faWebAwesome}
                             className="project-icon size-8"
                             id="laptop"
                             onClick={handleWeatherClick}
@@ -111,7 +111,7 @@ function ProjectImage() {
                             onClick={handleUdemyGitHub}
                         />
                         <FontAwesomeIcon
-                            icon={faCodepen}
+                            icon={faWebAwesome}
                             className="project-icon size-8"
                             id="laptop"
                             onClick={handleUdemyClick}
@@ -135,7 +135,7 @@ function ProjectImage() {
                             onClick={handleNostraGitHub}
                         />
                         <FontAwesomeIcon
-                            icon={faCodepen}
+                            icon={faWebAwesome}
                             className="project-icon size-8"
                             id="laptop"
                             onClick={handleNostraClick}
