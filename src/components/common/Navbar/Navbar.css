@@ -1,0 +1,139 @@
+ /*Navbar Section*/ 
+
+ #navbar {
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 252, 252, 0.9);
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 0.1rem;
+}
+
+.nav-name {
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2.5px 2px 0 #d53b70;
+    color: #AA376B;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    color: #d53b70;
+}
+
+.navbar-items {
+    transition: color 0.3s #d53b70;
+}
+
+.navbar-items:hover {
+    color: #AA376B;
+}
+
+.navbar-items {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
+
+.navbar-items::before {
+    content: " ";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(170deg, #d53b70 10%, #AA376B 90%);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -0.3rem;
+    opacity: 0;
+    transform: translateY(-1.2rem);
+    transition: 0.3s ease;
+}
+
+.navbar-items:hover::before {
+    width: 100%;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menu-icon {
+    position: absolute;
+    left: 88%;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #d53b70;
+    transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+    color: #AA376B;
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+    .nav-name {
+        text-shadow: 2px 1.5px 0 #d53b70;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-name {
+        font-size: 4.5vw;
+        text-shadow: 2px 1.5px 0 #d53b70;
+    }
+
+    .navbar-links .navbar-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-name {
+        font-size: 5vw;
+        text-shadow: 1.5px 1px 0 #d53b70;
+    }
+
+    .navbar-links .navbar-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
