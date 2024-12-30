@@ -13,8 +13,14 @@ const About = () => {
     return (
         <section id="about">
             <div className="about-container">
-                <h2 className="about-head">Who I Am?</h2>
-                <p className="about-para">A motivated MERN stack web developer skilled in MongoDB, Express.js, React, Node.js, Firebase, HTML, CSS, JavaScript, and Tailwind CSS. I focus on building robust, high-performance applications that deliver smooth, engaging user experiences. Driven by curiosity and creativity, I continuously seek to improve my skills and create impactful web solutions that solve real-world challenges.</p>
+                <h2 className="about-head">About</h2>
+                <p className="about-para">
+                    Hi, I'm Aasia, a recent graduate of computer science majoring in web development. 
+                    I'm skilled in developing MERN stack applications and have a solid background in front-end and back-end technologies. 
+                    I am able to create cutting-edge, scalable online applications because to my proficiency with MongoDB, Express, React, and Node.js. 
+                    Additionally, I have database management skills, which guarantee effective data storage and retrieval. 
+                    I also have practical expertise using Firebase to handle data in real-time and authenticate users, creating responsive and smooth user experiences.
+                </p>
             </div>
             <div className='about-images'>
                 <img className='image' src={Html} alt="htmlLogo" />

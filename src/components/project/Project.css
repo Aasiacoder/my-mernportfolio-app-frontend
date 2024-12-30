@@ -6,13 +6,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
-}
-
-.project-head {
-    text-align: left;
-    padding-left: 3rem;
-    font-size: 3rem;
-    font-weight: 700;
+    padding: 10px;
 }
 
 .project-container {
@@ -26,6 +20,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.project-head {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .project-box {
