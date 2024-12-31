@@ -82,6 +82,11 @@ img {
     margin: auto;
 }
 
+#clickableImage1 {
+    width: 300px;
+    height: 150px;
+}
+
 .project-content {
     width: 300px;
     height: 150px;
