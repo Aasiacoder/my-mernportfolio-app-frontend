@@ -15,7 +15,7 @@ const About = () => {
             <div className="about-container">
                 <h2 className="about-head">About</h2>
                 <p className="about-para">
-                    Hi, I'm Aasia, a recent graduate of computer science majoring in web development. 
+                    Hi, I'm Aasia, a recent graduate of computer science. 
                     I'm skilled in developing MERN stack applications and have a solid background in front-end and back-end technologies. 
                     I am able to create cutting-edge, scalable online applications because to my proficiency with MongoDB, Express, React, and Node.js. 
                     Additionally, I have database management skills, which guarantee effective data storage and retrieval. 
