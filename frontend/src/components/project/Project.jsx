@@ -6,7 +6,7 @@ const Project = () => {
 
     return (
         <section id="project">
-            <h2 className="project-head">My <span>Projects</span></h2>
+            <h2 className="project-head">Projects</h2>
             <div className="project-container"> {/*wrapper */}
 
                 {/*ProjectImage page*/}

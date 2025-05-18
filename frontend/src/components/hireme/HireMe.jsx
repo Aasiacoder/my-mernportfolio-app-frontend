@@ -16,7 +16,7 @@ const HireMe = () => {
         <section id="hireme">
             <div className="hireme-container">
                 <h2 className='hireme-header'>Hire Me</h2>
-                <p className='hireme-para'>If you're interested in hiring me, feel free to check out my CV and contact me!</p>
+                <p className='hireme-para'>If you’re looking for a passionate and dedicated developer, have a look at my CV and reach out to me!</p>
 
                 <div className="hireme-cv-container">
                     {/* View CV Button */}

@@ -1,20 +1,19 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require('dotenv').config(); //config .env file
 const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: '*' })); // Allow all origins or specify allowed origins
 
 // MongoDB Connection
 mongoose
-  .connect("mongodb+srv://aasia:emqlbmpblnimdias@cluster0.1sfxc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect(process.env.MONGO_URI)
   .then(() => console.log("DB Success"))
   .catch((err) => console.error("DB failed:", err));
 
@@ -25,20 +24,22 @@ const contactSchema = new mongoose.Schema({
   message: String,
 });
 
+// Model
 const Contact = mongoose.model("Contact", contactSchema);
 
 // Nodemailer Transporter
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "aasia3017@gmail.com",
-    pass: "emql bmpb lnim dias",
+    user: process.env.EMAIL,
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
 // POST Route to handle contact form submissions
 app.post("/api/contact", async (req, res) => {
   const { name, email, message } = req.body;
+  res.send("This is api contact");
 
   try {
     // Save to MongoDB
@@ -48,7 +49,7 @@ app.post("/api/contact", async (req, res) => {
     // Send Email
     const mailOptions = {
       from: email,
-      to: "aasia3017@gmail.com",
+      to: process.env.EMAIL_RECIPIENT,
       subject: "New Contact Form Submission",
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
@@ -66,6 +67,12 @@ app.post("/api/contact", async (req, res) => {
     res.status(500).json({ message: "Failed to save message" });
   }
 });
+
+// Fallback route for unmatched routes
+// app.get("/", (req, res) => {
+//   res.send("This is an API server. Use the correct endpoints.");
+// });
+
 
 // Start Server
 app.listen(PORT, () =>

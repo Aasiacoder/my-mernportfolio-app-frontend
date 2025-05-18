@@ -41,7 +41,7 @@ const Footer = () => {
                         <li><a href="#project" className="footer-items">Project</a></li>
                         <li><a href="#contact" className="footer-items">Contact</a></li>
                     </ul>
-                    <p>&copy; 2024 Aasia | All Rights Reserved</p>
+                    <p>&copy; 2025 Aasia | All Rights Reserved</p>
                 </div>
             </footer>
         </section>

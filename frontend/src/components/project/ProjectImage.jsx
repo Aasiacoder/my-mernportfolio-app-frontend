@@ -53,7 +53,7 @@ const ProjectImage = () => {
             <div className="project-box">
                 <h3>To-Do List App</h3>
                 <div className="project-image">
-                    <img src={ActodoApp} id="clickableImage1" alt="" />
+                    <img src={ActodoApp} id="clickableImage1" alt="project image" />
                     <div className="project-content">
                         <p>Html | Tailwind CSS | React</p>
                         <FontAwesomeIcon
@@ -77,7 +77,7 @@ const ProjectImage = () => {
             <div className="project-box">
                 <h3>Weather App</h3>
                 <div className="project-image">
-                    <img src={WeatherApp} id="clickableImage1" alt="" />
+                    <img src={WeatherApp} id="clickableImage1" alt="project image" />
                     <div className="project-content">
                         <p>Html | Tailwind CSS | React(Axios)</p>
                         <FontAwesomeIcon
@@ -101,7 +101,7 @@ const ProjectImage = () => {
             <div className="project-box">
                 <h3>Udemy Replica</h3>
                 <div className="project-image">
-                    <img src={UdemyApp} id="clickableImage1" alt="" />
+                    <img src={UdemyApp} id="clickableImage1" alt="project image" />
                     <div className="project-content">
                         <p>Html | CSS | Tailwind CSS | React</p>
                         <FontAwesomeIcon
@@ -125,7 +125,7 @@ const ProjectImage = () => {
             <div className="project-box">
                 <h3>Nostra Clone</h3>
                 <div className="project-image">
-                    <img src={NostraApp} id="clickableImage1" alt="" />
+                    <img src={NostraApp} id="clickableImage1" alt="project image" />
                     <div className="project-content">
                         <p>Html | CSS | JavaScript</p>
                         <FontAwesomeIcon
