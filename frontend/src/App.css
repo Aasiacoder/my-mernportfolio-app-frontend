@@ -5,10 +5,8 @@
 }
 
 body {
-  width: 100%;
-  height: auto;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .App {
