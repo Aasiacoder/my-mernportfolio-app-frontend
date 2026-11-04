@@ -1,0 +1,129 @@
+/*Footer section*/
+
+#footer {
+    margin-top: 8rem;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-top: 2px solid #d53b70;
+    box-shadow: inset 2px 3px 20px #d53b70;
+    color: #1D232C;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.footer-content  ul {
+    margin: 5px 0;
+}
+
+.footer-content p {
+    color: #1D232C;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.social-links {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.fa-icon {
+    color: #d53b70;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fa-icon:hover {
+    color: #AA376B;
+    transform: scale(1.1);
+}
+
+/*Footer Nav Section*/
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: #d53b70;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-items {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-items:hover {
+    color: #AA376B;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+
+/*Media Query Responsiveness*/
+
+@media screen  and (max-width: 1024px) {
+    #footer {
+        margin-top: 5rem;
+    } 
+
+    .footer-content p {
+        font-size: 16px;
+    }
+
+    .footer-items {
+        font-size: 16px;
+    }
+}
+
+@media screen  and (max-width: 768px) {
+    #footer {
+        margin-top: 2rem;
+    } 
+
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .footer-items {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen  and (max-width: 600px) {
+    #footer {
+        margin-top: 1rem;
+    } 
+
+    .footer-content p {
+        font-size: 13px;
+    }
+
+    .footer-items {
+        font-size: 13px;
+    }
+}
