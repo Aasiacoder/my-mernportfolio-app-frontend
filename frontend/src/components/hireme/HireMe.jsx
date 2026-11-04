@@ -1,7 +1,7 @@
 import React from 'react';
 import './HireMe.css';
 import { useLocation } from 'react-router-dom';
-import AasiaCV from '../../assets/AasiaMernStackDev.pdf'
+import AasiaCV from '../../assets/Aasia_A_MERN_Full_Stack_Developer.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMailBulk } from '@fortawesome/free-solid-svg-icons'
 
